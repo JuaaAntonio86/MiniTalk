@@ -1,38 +1,49 @@
+NAME = minitalk
+CLIENT = client
+SERVER = server
 
-NAME = push_swap
-BONUS = checker
 CFLAGS = -Wall -Wextra -Werror 
-SRCMAIN =src/push_swap.c $(SRCS)
-SRCS =	src/ft_splitarg.c src/ft_stackinit.c src/operations.c src/sorting.c src/bigsort.c src/biggi.c src/biggi2.c\
-	
-OBJS = $(SRCMAIN:.c=.o) 
-DEPS = $(SRCMAIN:.c=.d)
 
-SRCBONUS = 	src/checker.c $(SRCS)
+SRC_SRV = src/server.c 
+SRC_CLNT = src/client.c 
+	
+OBJS_SRV = $(SRC_SRV:.c=.o) 
+DEPS_SRV = $(SRC_SRV:.c=.d)
+
+OBJS_CLT = $(SRC_CLNT:.c=.o) 
+DEPS_CLT = $(SRC_CLNT:.c=.d)
+
+SRCBONUS = 	$(SRCS)
 
 OBJBONUS = $(SRCBONUS:.c=.o)
 DEPBONUS = $(SRCBONUS:.c=.d)
 
 RM = rm -f
 
-PS = libs/push_swap.h
+MTLK = libs/mini_talk.h
 LIBFT_DIR = libs/MyLibft
 LIBFT =  libs/MyLibft/libft.a
-LIBS = $(PS) $(LIBFT)
+LIBS = $(MTLK) $(LIBFT)
 GREEN = \033[1;92m
 RED = \033[1;91m
 NC = \033[0m
 
-%.o: %.c $(PS) Makefile
+%.o: %.c $(MTLK) Makefile
 	@$(CC) $(CFLAGS) -MMD -g -I./ -c $< -o $@
 
 all:
 	@$(MAKE) -C $(LIBFT_DIR)
-	@$(MAKE) $(NAME)
+	@$(MAKE) $(SERVER)
+	@$(MAKE) $(CLIENT)
+	
 
-$(NAME):: $(OBJS)
-	@$(CC) $(OBJS) $(LIBFT) -o $@
-	@echo "$(GREEN)push_swap compiled$(NC)"
+$(SERVER):: $(OBJS_SRV)
+	@$(CC) $(OBJS_SRV) $(LIBFT) -o $@
+	@echo "$(GREEN)Server compiled$(NC)"
+
+$(CLIENT):: $(OBJS_CLT)
+	@$(CC) $(OBJS_CLT) $(LIBFT) -o $
+	@echo "$(GREEN)Client compiled$(NC)"
 
 $(NAME)::
 	@echo -n
