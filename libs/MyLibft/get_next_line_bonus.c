@@ -122,29 +122,3 @@ char	*ft_cleanbuffer(char *buffer, char *newline)
 	free(buffer);
 	return (nbuffer);
 }
-
-/*/////////////////////////////////////MAIN////////////////////////
-#include <unistd.h>
-#include <fcntl.h>
-int main(void)
-{
-	int		fd;
-	char	*theline;
-//	int		bytes;
-    int		i = 0;
-
-	theline = NULL;
-	fd = open("42_with_nl", O_RDONLY);
-	printf("file descriptor = %d\n", fd);
-	theline = malloc(999);
-//	bytes = read(fd, theline, 999);
-//	printf("CONTENT:\n%s\nbytes read: %d", theline, bytes);
-	while (theline != NULL)
-	{
-		printf("----next line:----\n");
-		theline = get_next_line(fd);
-		printf("%s", theline);
-		i++;
-	}
-	return (0);
-}*/

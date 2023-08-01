@@ -30,18 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*#include <string.h>
-
-int main(void)
-{
-
-    char src[] = "Hello, world!";
-    char dest[5];
-
-	ft_memcpy(dest, src, 4);
-//    memcpy(dest, src, 13);
-    printf("Copied string is: %s\n", dest);
-
-    return 0;
-}*/

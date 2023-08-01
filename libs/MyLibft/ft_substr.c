@@ -32,11 +32,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[len] = '\0';
 	return (substr);
 }
-
-/*int main(void)
-{
-	char str[15] = "hola que tal?";
-
-	printf("%s\n", ft_substr(str, 5, 3));
-//	printf("%d", substr(str, 5, 9));
-}*/

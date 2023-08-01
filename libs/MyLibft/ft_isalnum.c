@@ -20,11 +20,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/*#include <ctype.h>
-#include <stdio.h>
-int main(void)
-{
-    printf("%i", ft_isalnum(122));
-    printf("%i", isalnum(122));
-}*/

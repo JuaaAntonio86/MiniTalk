@@ -19,11 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-
-/*#include  <ctype.h>
-#include <stdio.h>
-int main(void)
-{
-    printf("%i", ft_isdigit(7));
-    printf("%i", isdigit(7));
-}*/

@@ -39,8 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	strj[j] = 0;
 	return (strj);
 }
-
-/*int main(void)
-{
-	printf("%s", ft_strjoin("hello ", "world"));
-}*/

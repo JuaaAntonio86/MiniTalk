@@ -19,15 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-/*#include <ctype.h>
-#include <stdio.h>
-int main(void)
-{
-
-	char c,b;
-	c = ft_tolower(65);
-	b = tolower(65);
-	printf("%c", c);
-	printf("%c", b);
-}*/

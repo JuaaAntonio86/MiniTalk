@@ -39,11 +39,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(trim, &s1[start], (i - start) + b);
 	return (trim);
 }
-
-/*int main(void)
-{
-	char *str = "11   Hello World!!!!11   ";
-	char *set = "   1 ";
-
-	printf("%s", ft_strtrim(str,set));
-}*/

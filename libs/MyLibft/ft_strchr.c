@@ -27,14 +27,4 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&(s[i]));
 	else
 		return (NULL);
-}	
-
-/*#include <stdio.h>
-#include <string.h>
-int main(void)
-{
-
-	printf("%p\n", ft_strchr("hola",0));
-	printf("%p", strchr("hola", 0));
-
-}*/
+}

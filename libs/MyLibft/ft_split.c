@@ -127,17 +127,3 @@ static void	*ft_freesp(char **m)
 	free(m);
 	return (NULL);
 }
-
-/*//////////////////////////////////////////MAINNNNNNNNNNNnn/////////////////
-int main(void)
-{
-	char *str = "hola qeue tal?";
-	char **arr = ft_split(str, 32);
-	int i = 0;
-	
-	while (arr[i])
-	{
-		printf("%s\n", arr[i]);
-	i++;
-	}
-}*/

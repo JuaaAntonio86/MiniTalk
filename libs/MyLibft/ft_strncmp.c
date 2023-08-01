@@ -28,10 +28,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*#include <string.h>
-int main(void)
-{
-	printf("%i",ft_strncmp("hOla", "hoLa", 0));
-	printf("%i",strncmp("hOla", "hoLa", 0));
-}*/

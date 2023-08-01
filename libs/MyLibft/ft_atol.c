@@ -39,11 +39,3 @@ long	ft_atol(const char *str)
 		ato = ato * -1;
 	return (ato);
 }
-
-/*int main(void)
-{
-	char	stri[] = "  1231a 10";
-
-	printf("%i\n", ft_atoi(stri));
-	printf("%i", atoi(stri));
-}*/

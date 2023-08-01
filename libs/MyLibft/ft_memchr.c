@@ -27,12 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-/*int main(void)
-{
-const void *s = "hola que tal";
-int c = 32;
-
-printf("%s\n", ft_memchr(s,c,6));
-printf("%s", memchr(s,c,6));
-}*/

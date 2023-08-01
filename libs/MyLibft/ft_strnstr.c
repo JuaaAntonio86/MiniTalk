@@ -37,14 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/*#include <string.h>
-int main(void)
-{
- 	const char *largestring = "Foo Ba bar Baz";
- 	const char *smallstring = "Bar";
-
-    printf("%s\n",ft_strnstr(largestring, smallstring, 10));
-    printf("%s",strnstr(largestring, smallstring, 10));
-
-}*/

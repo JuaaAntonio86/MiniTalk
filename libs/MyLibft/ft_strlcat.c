@@ -33,18 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	return (k + ft_strlen(src));
 }
-/*int main(void)
-{
-    char src[] = "CCCCCCAAAAAAAAAAAAA";
-    char dest[15];
-//    char src2[] = "CCCCCCAAAAAAAAAAAAA";
-
-//    char dest2[15];
-
-	unsigned int len = ft_strlcat(dest, src, -1);
-//	unsigned int len1 = strlcat(dest2, src2, -1);
-    printf("ft_strlcpy result: dest = %s, len = %u\n", dest, len);
-//	printf("strlcpy result: dest = %s, len = %u\n", dest2, len1);
-
- 	return 0;
-}*/

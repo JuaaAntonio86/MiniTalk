@@ -24,14 +24,4 @@ char	*ft_strrchr(const char *s, int c)
 	i--;
 	}
 	return (0);
-}	
-
-/*#include <stdio.h>
-#include <string.h>
-int main(void)
-{
-
-	printf("%p\n", ft_strrchr("hoola",60));
-	printf("%p", strrchr("hoola",60));
-
-}*/
+}

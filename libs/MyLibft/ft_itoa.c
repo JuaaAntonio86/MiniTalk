@@ -78,11 +78,3 @@ static void	ft_fillnum(char *itoa, int n, int len)
 	}
 	itoa[i] = 0;
 }
-
-/*#include <stdio.h>
-#include <stdlib.h>
-
-int main(void)
-{
-	printf("%s", ft_itoa(10020));
-}*/

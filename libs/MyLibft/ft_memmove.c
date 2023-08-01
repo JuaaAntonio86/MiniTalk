@@ -38,22 +38,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*#include <string.h>
-int main(void)
-{
-
-    unsigned char src[] = "hola que tal?";
-	unsigned char dest[15];
-    unsigned char src1[] = "hola que tal?";
-	unsigned char dest1[15];
-
-
-
-	ft_memmove(dest1, src1, 13);
-    memmove(dest, src, 13);
-    printf("Copied string is: %s\n", dest1);
-    printf("Copied string is: %s\n", dest);
-
-    return 0;
-}*/

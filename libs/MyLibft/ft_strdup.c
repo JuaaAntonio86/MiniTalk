@@ -31,12 +31,3 @@ char	*ft_strdup(const char *s1)
 	dupstr[i] = 0;
 	return (dupstr);
 }
-
-/*int main(void)
-{
-
-char str[15] = "hola que tal?";
-
-printf("%s", ft_strdup(str));
-
-}*/

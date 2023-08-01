@@ -19,15 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/*#include <ctype.h>
-#include <stdio.h>
-int main(void)
-{
-
-	char c,b;
-	c = ft_toupper(65);
-	b = toupper(65);
-	printf("%c", c);
-	printf("%c", b);
-}*/

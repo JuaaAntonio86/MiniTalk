@@ -22,19 +22,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, count * size);
 	return (ptr);
 }
-
-/*#include <unistd.h>	
-#include <stdio.h>
-#include <stdlib.h>	
-int main(void)
-{
-	// printf ("%s\n", ft_calloc(10, 1)) ;
-	 write(1, ft_calloc(10, 1), 10);
-	 write(1, "\n", 1);
-	 write(1, calloc(10, 1), 10);
-	 write(1, "\n", 1);
-
-	 //printf ("%s\n", calloc(10,  1)); 
-
-    return (0);
-}*/

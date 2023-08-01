@@ -31,12 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*int main(void)
-{
-	const void *s1 = "hola que ta2";
-	const void *s2 = "hola que@ ta";
-	
-	printf("%i\n", ft_memcmp(s1, s2 ,12));
-	printf("%d", memcmp(s1, s2, 12));
-}*/
