@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juan-anm <juan-anm@student.42barcel>       +#+  +:+       +#+        */
+/*   By: juanantonio <juanantonio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 11:12:16 by juan-anm          #+#    #+#             */
-/*   Updated: 2023/06/21 11:52:56 by juan-anm         ###   ########.fr       */
+/*   Updated: 2023/08/07 00:08:36 by juanantonio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@
 # include <limits.h>
 # include <stdio.h>
 
-/*//////// GNL BUFFER DEFINITION \\\\\\\\\\\\*/
+/*//////// GNL BUFFER DEFINITION \\\\\\\\\\\\*/	
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE (int) 5
-
+# ifndef BUFFER_SIZE 
+#  define BUFFER_SIZE 5 
 # endif
 
 /*////////////////  First Part  \\\\\\\\\\\\\\\\\*/

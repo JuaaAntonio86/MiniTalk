@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juan-anm <juan-anm@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juanantonio <juanantonio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 11:38:12 by juan-anm          #+#    #+#             */
-/*   Updated: 2023/05/11 12:05:12 by juan-anm         ###   ########.fr       */
+/*   Updated: 2023/08/06 09:46:28 by juanantonio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	while (s1[i])
 	{
-	strj[j] = s1[i];
-	j++;
-	i++;
+		strj[j] = s1[i];
+		j++;
+		i++;
 	}
 	i = 0;
 	while (s2[i])
 	{
-	strj[j] = s2[i];
-	j++;
-	i++;
+		strj[j] = s2[i];
+		j++;
+		i++;
 	}
 	strj[j] = 0;
 	return (strj);

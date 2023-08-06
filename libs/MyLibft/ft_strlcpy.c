@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juan-anm <juan-anm@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juanantonio <juanantonio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 11:16:14 by juan-anm          #+#    #+#             */
-/*   Updated: 2023/05/09 13:35:18 by juan-anm         ###   ########.fr       */
+/*   Updated: 2023/08/06 09:44:48 by juanantonio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	while (src[i] != 0 && i < (size - 1))
 	{
 		dest[i] = src[i];
-	i++;
+		i++;
 	}
 	dest[i] = 0;
 	return (cont);

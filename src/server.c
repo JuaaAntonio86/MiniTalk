@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   server.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: juanantonio <juanantonio@student.42.fr>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/06 11:05:06 by juanantonio       #+#    #+#             */
+/*   Updated: 2023/08/06 11:14:00 by juanantonio      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libs/mini_talk.h"
 
-void	bit_handler(int sig) 
+void	bit_handler(int sig)
 {
 	static int	c = 0;
 	static int	num_bit = 0;
@@ -13,7 +25,7 @@ void	bit_handler(int sig)
 		ft_printf("%c", c);
 		num_bit = 0;
 		c = 0;
-	}	
+	}
 	c <<= 1;
 }
 

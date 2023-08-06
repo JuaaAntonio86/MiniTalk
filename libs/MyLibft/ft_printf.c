@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juan-anm <juan-anm@student.42barcel>       +#+  +:+       +#+        */
+/*   By: juanantonio <juanantonio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 15:15:07 by juan-anm          #+#    #+#             */
-/*   Updated: 2023/06/02 13:05:06 by juan-anm         ###   ########.fr       */
+/*   Updated: 2023/08/06 09:43:07 by juanantonio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_printf(const char *str, ...)
 		if (tmp == -1)
 			return (-1);
 		res += tmp;
-	i++;
+		i++;
 	}
 	va_end(val);
 	return (res);

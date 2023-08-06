@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: juanantonio <juanantonio@student.42.fr>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/06 11:03:43 by juanantonio       #+#    #+#             */
+/*   Updated: 2023/08/07 00:01:02 by juanantonio      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libs/mini_talk.h"
 
 void	send_bit(int pid, char *str, size_t len)
@@ -22,19 +34,36 @@ void	send_bit(int pid, char *str, size_t len)
 	}
 }
 
-int	main(int argc, char **argv)
+int	check_pid(char *str)
 {
-	int		pid;
-	char	*str;
+	int	i;
 
-	if (argc == 3)
+	i = 0;
+	while (str[i])
 	{
-		pid = ft_atoi(argv[1]);
-		str = argv[2];
-		send_bit(pid, str, ft_strlen(str));
+		if (str[i] < '0' || str[i] > '9')
+			return (1);
+		i++;
 	}
-	else
-		ft_printf("\nPlease insert a correct PID and a string to send as argument\n\n");
+	return (0);
 }
 
+int	main(int ac, char **av)
+{
+	int		pid;
 
+	if (ac == 3)
+	{
+		if (check_pid(av[1]) == 1)
+		{
+			ft_printf("\nPlease insert correct PID\n\n");
+			return (1);
+		}
+		pid = ft_atoi(av[1]);
+		send_bit(pid, av[2], ft_strlen(av[2]));
+	}
+	else
+	{
+		ft_printf("\nPlease insert correct arguments\n\n");
+	}
+}
